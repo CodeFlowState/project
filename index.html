@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Project</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<a class="skip" href="#home">Skip to main content</a>
+	<header>
+		<div class="brand">
+			<span class="dot" aria-hidden="true"> </span>
+			<div>
+				<div style="font-size:14px">Little Website</div>
+				<div style="font-size:12px;color:var(--muted);margin-top:2px">A single page of moments</div>
+			</div>
+		</div>
+		<button class="menu-btn ripple" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+			<span class="menu-icon" aria-hidden="true"></span>
+		</button>
+		<nav id="primary-nav" aria-label="Primary" role="navigation">
+			<a class="navlink active" href="#home" aria-current="true">Home</a>
+			<a class="navlink" href="#moments">Favourite Moments 😂</a>
+			<a class="navlink" href="#music">Music</a>
+			<a class="navlink" href="#little">Little things about you</a>
+			<a class="navlink" href="#final">Final message</a>
+		</nav>
+	</header>
+
+	<main>
+		<section id="home" aria-labelledby="home-label" role="region">
+			<div class="container hero">
+				<div class="avatar" role="img" aria-label="Smiling face">😊</div>
+				<div>
+					<h1 id="home-label">Welcome — glad you're here</h1>
+					<p>Hi! This page brings together a few favourite moments, music, and small details. Use the navigation to jump between sections.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="moments" aria-labelledby="moments-label">
+			<div class="container">
+				<h2 id="moments-label">Favourite Moments 😂</h2>
+				<p style="color:var(--muted)">Small snapshots that always make me smile.</p>
+				<div class="grid" style="margin-top:14px">
+					<article class="card">
+						<h3>Unexpected joke <span class="emoji">😂</span></h3>
+						<p class="muted">That moment when something silly caught everyone off guard and laughter filled the room.</p>
+					</article>
+					<article class="card">
+						<h3>Late-night snacks <span class="emoji">🌙</span></h3>
+						<p class="muted">Sharing fries and stories past midnight.</p>
+					</article>
+					<article class="card">
+						<h3>Small victories <span class="emoji">🏆</span></h3>
+						<p class="muted">Finishing a project or finally nailing a recipe.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="music" aria-labelledby="music-label">
+			<div class="container">
+				<h2 id="music-label">Music</h2>
+				<p style="color:var(--muted)">A few songs I keep coming back to.</p>
+				<div class="music-box" style="margin-top:14px">
+					<div class="card" style="flex:1 1 320px;min-width:260px">
+						<h3>Chill playlist</h3>
+						<p id="music-desc" style="color:var(--muted);margin:6px 0 12px 0">Play a local file or replace the source with your preferred track.</p>
+						<audio controls aria-describedby="music-desc" aria-label="Audio player: chill playlist">
+							<source src="sample.mp3" type="audio/mpeg">
+							Your browser does not support the audio element.
+						</audio>
+					</div>
+					<div style="flex:1 1 240px;min-width:220px">
+						<div class="card">
+							<h3>Now playing</h3>
+							<p style="color:var(--muted)">No track selected — add a file named <strong>sample.mp3</strong> next to this page or edit the source URL.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="little" aria-labelledby="little-label">
+			<div class="container">
+				<h2 id="little-label">Little things about you</h2>
+				<p style="color:var(--muted)">Small details that add up.</p>
+				<ul class="little-list" style="margin-top:14px">
+					<li class="card">Loves warm drinks and sketching</li>
+					<li class="card">Collects tiny plant pots</li>
+					<li class="card">Enjoys unexpected puns</li>
+					<li class="card">Prefers playlists over radio</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="final" aria-labelledby="final-label">
+			<div class="container">
+				<h2 id="final-label">Final message</h2>
+				<div class="card" style="margin-top:14px">
+					<p>Thanks for visiting this little page — feel free to edit content, swap the audio, or add your own favourite moments. Hope it brought a smile 🙂</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">Made with a few emojis and good vibes.</div>
+	</footer>
+
+		<button id="backToTop" class="back-to-top" aria-hidden="true" aria-label="Back to top">
+			<span class="sr-only">Back to top</span>
+			<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+				<path fill="currentColor" d="M12 4l-8 8h5v8h6v-8h5z"></path>
+			</svg>
+		</button>
+
+	<script src="scripts.js" defer></script>
+</body>
+</html>
+
